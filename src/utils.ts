@@ -1,7 +1,9 @@
+import { Event } from "./components/Timeline/types";
+
 /**
  * Parse event to transform string date into javascript date objects
  */
-export const parseEvents = (events) => {
+export const parseEvents = (events: Event[]) => {
   return events.map((event) => ({
     ...event,
     startDate: new Date(event.start),
@@ -12,8 +14,8 @@ export const parseEvents = (events) => {
 /**
  * Calculating lanes to avoid overlapping events
  */
-export const findOverlappingEvents = (events) => {
-  let all = [];
+export const findOverlappingEvents = (events: Event[]) => {
+  let all: Event[][] = [];
 
   events.forEach((element) => {
     let placed = false;

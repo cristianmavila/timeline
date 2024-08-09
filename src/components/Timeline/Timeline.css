@@ -2,6 +2,10 @@
   position: relative;
   overflow: hidden;
   width: 100%;
+  display: flex;
+  flex-flow: column;
+  align-items: flex-end;
+  gap: 20px;
 }
 
 .timeline-container {
@@ -39,4 +43,9 @@
   background-color: transparent;
   border-bottom: 2px solid lightcoral;
   font-weight: 700;
+}
+
+.zoom-controls {
+  display: flex;
+  gap: 10px;
 }
