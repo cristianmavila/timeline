@@ -1,0 +1,42 @@
+.timeline {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.timeline-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  gap: 5px;
+  padding: 20px;
+  background: #f2f2f2;
+  overflow-x: auto;
+  position: relative;
+  width: 100%;
+  white-space: nowrap;
+}
+
+.timeline-lane {
+  display: contents;
+}
+
+.timeline-event {
+  background-color: lightblue;
+  border: 1px solid blue;
+  padding: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 12px;
+  border-radius: 3px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.timeline-input {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  border-bottom: 2px solid lightcoral;
+  font-weight: 700;
+}
